@@ -63,6 +63,12 @@ def problem3(N):
     print(sum)
     return sum
 
+def problem2():
+    A=np.array([[3,2.1],[5,3.3]])
+    b=np.array([10,20])
+    x=np.linalg.solve(A,b)
+
+    print(x)
 def driver4(abs=True):
     X=[]
     for _ in range(1000):
@@ -103,6 +109,7 @@ def problem4(X,abs=False):
 
 
 if __name__ ==  '__main__':
-    # driver1()
+    driver1()
     driver3()
-    # driver4()
+    driver4()
+    # problem2()
